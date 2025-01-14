@@ -54,7 +54,7 @@ Optional Bonus: Use a vector database like Qdrant to provide the agent with memo
    - Add a new user with a password and grant access to the database:
      ```sql
      CREATE DATABASE market_research;
-     CREATE USER user WITH PASSWORD 'password';
+     CREATE USER user WITH PASSWORD 'pass';
      GRANT ALL PRIVILEGES ON DATABASE market_research TO user;
      ```
 
