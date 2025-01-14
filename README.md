@@ -55,13 +55,13 @@ Optional Bonus: Use a vector database like Qdrant to provide the agent with memo
      ```sql
      CREATE DATABASE market_research;
      CREATE USER user WITH PASSWORD 'pass';
-     GRANT ALL PRIVILEGES ON DATABASE market_research TO user;
+     GRANT ALL PRIVILEGES ON DATABASE market_research TO user; //I used pgadmin
      ```
 
 5. Update the `DATABASE_URL` in the code to reflect your PostgreSQL credentials:
 
    ```python
-   DATABASE_URL = "postgresql+asyncpg://user:password@localhost/market_research"
+   DATABASE_URL = "postgresql+asyncpg://user00:pass@localhost:5432/market_research"
    ```
 
 6. Add your OpenAI API key in the code:
